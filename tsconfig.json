@@ -1,14 +1,14 @@
 {
-    "compilerOptions": {
-        // Environment setup & latest features
-        "jsx": "preserve",
-        "jsxImportSource": "solid-js",
-        "module": "ESNext",
-        "target": "ES2022",
-        // Bundler mode
-        "moduleResolution": "Bundler",
-        // Best practices
-        "skipLibCheck": true,
-        "strictNullChecks": true,
-    },
+	"compilerOptions": {
+		// Environment setup & latest features
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js",
+		"module": "ESNext",
+		"target": "ES2022",
+		// Bundler mode
+		"moduleResolution": "Bundler",
+		// Best practices
+		"skipLibCheck": true,
+		"strictNullChecks": true
+	}
 }
