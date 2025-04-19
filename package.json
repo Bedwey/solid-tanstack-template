@@ -10,15 +10,11 @@
 	"private": true,
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-<<<<<<< HEAD
 		"@tanstack/solid-router-devtools": "^1.116.0",
 		"@types/bun": "latest",
 		"unocss": "^66.1.0-beta.12",
 		"unocss-preset-animations": "^1.1.1",
 		"unocss-preset-shadcn": "^0.5.0",
-=======
-		"unocss": "^66.1.0-beta.11",
->>>>>>> 4095612b4293be2b2686a1aa903715a08536dc59
 		"vite-plugin-solid": "^2.11.6",
 		"vite-tsconfig-paths": "^5.1.4"
 	},
