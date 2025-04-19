@@ -1,6 +1,13 @@
 import * as fs from "node:fs";
 import { createFileRoute, useRouter } from "@tanstack/solid-router";
 import { createServerFn } from "@tanstack/solid-start";
+import { Button } from "~/components/ui/button";
+import { Badge, badgeVariants } from "~/components/ui/badge";
+import {
+	TextField,
+	TextFieldInput,
+	TextFieldLabel,
+} from "~/components/ui/text-field";
 
 const filePath = "count.txt";
 
@@ -33,16 +40,22 @@ function Home() {
 	const state = Route.useLoaderData();
 
 	return (
-		<button
-			class="bg-red p-10 rounded-xl"
-			type="button"
-			onClick={() => {
-				updateCount({ data: 1 }).then(() => {
-					router.invalidate();
-				});
-			}}
-		>
-			Add 1 to {state()}?
-		</button>
+		<div class="flex flex-col items-center justify-center h-screen gap-2">
+			<Button>Hello World!</Button>
+			<Badge variant="default">times</Badge>
+			<Badge variant="warning" round>
+				times
+			</Badge>
+			<TextField class="grid w-full max-w-sm items-center gap-2">
+				<TextFieldLabel for="email">البريد الإلكتروني</TextFieldLabel>
+				<TextFieldInput
+					type="email"
+					id="email"
+					placeholder="email@example.com"
+					dir="ltr"
+				/>
+			</TextField>
+			<Button>تسجيل الدخول</Button>
+		</div>
 	);
 }

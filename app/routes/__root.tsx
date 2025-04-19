@@ -4,7 +4,9 @@ import {
 	HeadContent,
 	Scripts,
 } from "@tanstack/solid-router";
+import { TanStackRouterDevtools } from "@tanstack/solid-router-devtools";
 
+import "@unocss/reset/tailwind-compat.css";
 import "virtual:uno.css";
 
 export const Route = createRootRoute({
@@ -26,5 +28,12 @@ export const Route = createRootRoute({
 });
 
 function RootComponent() {
-	return <Outlet />;
+	return (
+		<>
+			<div dir="rtl">
+				<Outlet />
+				<TanStackRouterDevtools />
+			</div>
+		</>
+	);
 }

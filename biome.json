@@ -21,6 +21,9 @@
 						"filenameCases": ["kebab-case"]
 					}
 				}
+			},
+			"a11y": {
+				"noLabelWithoutControl": "off"
 			}
 		}
 	},
